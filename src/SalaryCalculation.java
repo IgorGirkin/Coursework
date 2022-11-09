@@ -37,11 +37,14 @@ public class SalaryCalculation {
 
     public static void averageValueOfSalaries(Employee[] arrayOfEmployees) {
         double sum = 0;
+        int numberEmployees = 0;
         for (int i = 0; i < arrayOfEmployees.length; i++) {
             if (arrayOfEmployees[i] != null) {
                 sum += arrayOfEmployees[i].getEmployeeSalary();
+                numberEmployees++;
             }
         }
-        System.out.println("Среднее значение зарплат : " + sum/arrayOfEmployees.length + " $.");
+        System.out.println("Колличество сотрудников : " + numberEmployees);
+        System.out.println("Среднее значение зарплат : " + sum/ numberEmployees +" $.");
     }
 }

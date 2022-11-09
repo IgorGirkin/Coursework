@@ -3,6 +3,7 @@ public class Main {
         System.out.println("+++++++++++++++++++++++");
     }
     public static void main(String[] args) {
+
         Employee[] arrayOfEmployees = new Employee[10];
         arrayOfEmployees[0] = new Employee("Роберт Неста Марли", 15220, 3);
         arrayOfEmployees[1] = new Employee("Ричард Старки", 500000, 1);
@@ -13,7 +14,7 @@ public class Main {
         arrayOfEmployees[6] = new Employee("Джеймс Дуглас Моррисон", 55846, 5);
         arrayOfEmployees[7] = new Employee("Ангус МакКиннон Янг", 364822, 3);
         arrayOfEmployees[8] = new Employee("Джордж Рооджер Уотерс", 5600, 1);
-        arrayOfEmployees[9] = new Employee("Брайан Гарольд Мэй", 26665, 1);
+        arrayOfEmployees[9] = null; //new Employee("Брайан Гарольд Мэй", 26665, 1);
 
         printSeparator();
         Employee.printAllArrayValues(arrayOfEmployees);
